@@ -4,14 +4,14 @@ ordem_senhasPrioridade = []
 n_senhaNormal = 0
 n_senhaPrioridade = 0
 
-def verificar_ordem():
+def verificar_ordem(): ### exibe as senhas já emitidas em ordem
     print("\n Senhas ATENDIMENTO NORMAL: ")
     print(f"{ordem_senhasNormal}")
     print("\n \n")
     print("\n Senhas ATENDIMENTO PRIORIDADE: ")
     print(f"{ordem_senhasPrioridade}\n")
 
-def senha_normal():
+def senha_normal(): ### função que emite senhas para o atendimento normal
     global n_senhaNormal
 
     n_senhaNormal += 1
@@ -23,7 +23,7 @@ def senha_normal():
     retornar_menu = input("\nPressione enter pra voltar ao menu principal: ")
     return main_menu()
 
-def senha_prioridade():
+def senha_prioridade(): ### função que emite senhas para o atendimento prioritário
     global n_senhaPrioridade
 
     n_senhaPrioridade += 1
